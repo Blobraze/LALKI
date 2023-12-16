@@ -11,7 +11,8 @@ body {
     min-height: 100vh;
     background: url('images/20191208_122817.jpg') no-repeat;
     background-size: cover;
-    background-position: center;
+    background-position-x: center;
+    background-position-y: -150px;
 }
 
 .header {
@@ -19,7 +20,7 @@ body {
     top: 0;
     left: 0;
     width: 100%;
-    padding: 20px 100px;
+    padding: 50px 100px;
     background: transparent;
     display: flex;
     justify-content: space-between;
@@ -27,11 +28,27 @@ body {
     z-index: 100;
 }
 
+.button {
+    position: absolute;
+    display: none;
+    left: 10px;
+    cursor: pointer;
+    background: transparent;
+    background-image: url(images/sidebar_icon.png);
+    background-size: cover;
+    border: none;
+    height: 50px;
+    width: 50px;
+}
+
+/*rgb(70, 70, 70)*/
+
 .logo {
-    font-size: 32px;
-    color: rgb(70, 70, 70);
+    font-size: 42px;
+    color: rgb(49, 49, 49);
     text-decoration: none;
     font-weight: 700;
+    left: 0;
 }
 
 /*.header img {
@@ -43,10 +60,11 @@ body {
 
 .navbar a {
     position: relative;
-    font-size: 18px;
-    color: rgb(70, 70, 70);
+    right: 0;
+    font-size: 25px;
+    color: rgb(49, 49, 49);
     text-decoration: none;
-    font-weight: 500;
+    font-weight: 600;
     margin-left: 40px;
 }
 
@@ -57,11 +75,32 @@ body {
     left: 0;
     width: 0;
     height: 2px;
-    background: rgb(70, 70, 70);
+    background: rgb(49, 49, 49);
     transition: .3s;
 }
 
 .navbar a:hover::before {
     width: 100%;
 }
+
+.sideNavbar {
+    position: absolute;
+    z-index: 100;
+    display: none;
+    width: 200px;
+    height: 100vh;
+    background-color: seagreen;
+}
+
+@media screen and (max-width:1560px) {
+    body {background-position-y: -100px;}
+    .navbar a { display: none; }
+    .header { justify-content: center; padding: 20px;}
+    .button { display: block; }
+  }
+
+@media screen and (max-width:1050px) {
+    body {background-position-y: 0px;}
+}
+
 
