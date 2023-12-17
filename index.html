@@ -5,13 +5,19 @@
     <title>LALKI MADZI</title>
     <link rel="stylesheet" href="styles.css">
     <script src="script.js" defer></script>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
 </head>
 <body>
 
     <header class="header">
         <!--<img src="images/20231201_111825.jpg">-->
 
-        <button class="button" onclick="showSidebar()"></button>
+        <button class="button" onclick="showSidebar()">
+            <span class="material-icons md-40">
+                menu
+            </span>
+        </button>
 
         <a href="#" class="logo">LALKI MADZI</a>
 
@@ -26,8 +32,26 @@
     </header>
 
     <div id="sideNavbar" class="sideNavbar">
-        <button onclick="hideSidebar()">1</button>
-        <h1>test1</h1>
+        <button onclick="hideSidebar()">
+            <span class="material-icons md-40">close</span>
+        </button><br>
+        <hr style="border-top: 3px solid aliceblue"><br>
+        <ul>
+            <li href="#" onclick="">Strona główna</li>
+            <li href="#">Galeria</li>
+            <li href="#">Sklep</li>
+            <li href="#">Aktualności</li>
+            <li href="#">O nas</li>
+            <li href="#">Kontakt</li>
+        </ul>
     </div>
+
+    <div style="height: 2000px; width: 100%; background-color: transparent;">
+        
+    </div>
+
+    <footer>
+        <p>Stopka</p>
+    </footer>
 
 </body>
