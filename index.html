@@ -19,12 +19,11 @@
             </span>
         </button>
 
-        <a href="#" class="logo">LALKI MADZI</a>
+        <a onclick="openTab(event, 'home')" class="logo">LALKI MADZI</a>
 
         <nav class="navbar">
             <a class="tablink" onclick="openTab(event, 'home')" id="defaultOpen">Strona główna</a>
             <a class="tablink" onclick="openTab(event, 'gallery')">Galeria</a>
-            <a class="tablink" onclick="openTab(event, 'shop')">Sklep</a>
             <a class="tablink" onclick="openTab(event, 'news')">Aktualności</a>
             <a class="tablink" onclick="openTab(event, 'about_us')">O nas</a>
             <a class="tablink" onclick="openTab(event, 'contact')">Kontakt</a>
@@ -39,18 +38,15 @@
         <ul>
             <li class="tablink" onclick="openTab(event, 'home')">Strona główna</li>
             <li class="tablink" onclick="openTab(event, 'gallery')">Galeria</li>
-            <li class="tablink" onclick="openTab(event, 'shop')">Sklep</li>
             <li class="tablink" onclick="openTab(event, 'news')">Aktualności</li>
             <li class="tablink" onclick="openTab(event, 'about_us')">O nas</li>
             <li class="tablink" onclick="openTab(event, 'contact')">Kontakt</li>
         </ul>
     </div>
 
-    <div id="home" class="tabcontent" style="height: 2000px; width: 100%; background-color: red;"></div>
+    <div id="home" class="tabcontent" style="height: 2000px; width: 100%; background-color: transparent;"></div>
 
     <div id="gallery" class="tabcontent" style="height: 2000px; width: 100%; background-color: blue;"></div>
-
-    <div id="shop" class="tabcontent" style="height: 2000px; width: 100%; background-color: green;"></div>
 
     <div id="news" class="tabcontent" style="height: 2000px; width: 100%; background-color: yellow;"></div>
 
@@ -59,9 +55,24 @@
     <div id="contact" class="tabcontent" style="height: 2000px; width: 100%; background-color: violet;"></div>
 
     <footer>
-        <div class="footer-row-1" style="height: 30px; width: 100%; grid-row: 1; background-color: yellow;"></div>
-        <div class="footer-row-2" style="height: 30px; width: 100%; grid-row: 2; background-color: blue;"></div>
-        <div class="footer-row-3" style="height: 30px; width: 100%; grid-row: 3; background-color: green;"></div>
+        <div class="footer-row-1">
+            <a href="https://facebook.com/"><img src="images/Facebook-Brand-Asset-Pack/Logo/Secondary Logo/Facebook_Logo_Secondary.png"></a>
+            <a href="https://instagram.com/"><img src="images/01 Static Glyph/02 White Glyph/Instagram_Glyph_White.png"></a>
+        </div>
+        <div class="footer-row-2">
+            <a class="tablink" onclick="openTab(event, 'home')">Strona główna</a>
+            <a class="tablink" onclick="openTab(event, 'gallery')">Galeria</a>
+            <a class="tablink" onclick="openTab(event, 'news')">Aktualności</a>
+            <a class="tablink" onclick="openTab(event, 'about_us')">O nas</a>
+            <a class="tablink" onclick="openTab(event, 'contact')">Kontakt</a>
+        </div>
+        <div class="footer-row-3">
+            <a>Warunki korzystania</a>
+            <a>Polityka Prywatności</a>
+        </div>
+        <div class="footer-row-4">
+            <a>&copy; 2023 Lalki Madzi</a>
+        </div>
     </footer>
 
 </body>
